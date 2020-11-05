@@ -29,7 +29,6 @@
 | delivery_burden_id | integer    | null: false |
 | delivery_day_id    | integer    | null: false |
 | user               | references |             |
-| image              |            |             |
 
 ### Association
 
@@ -45,6 +44,7 @@
 
 ### Association
 
+- belongs_to :user
 - has_one    :item
 - has_one    :address
 
@@ -62,4 +62,4 @@
 
 ### Association
 
-- has_one     :order
+- belongs_to     :order
